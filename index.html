@@ -6,10 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Panda-Commerce</title>
 		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+		<!-- custom css  -->
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="container">
-			<nav class="navbar navbar-expand-lg bg-light">
+			<nav class="navbar navbar-expand-lg sticky-top bg-light">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
 						<img src="./images/logo.png" alt="Bootstrap" />
@@ -31,13 +33,13 @@
 								<a class="nav-link active" aria-current="page" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Shoes</a>
+								<a class="nav-link" href="#shoes">Shoes</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Backpack</a>
+								<a class="nav-link" href="#backpack">Backpack</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Subscribe</a>
+								<a class="nav-link" href="#subscribe">Subscribe</a>
 							</li>
 						</ul>
 					</div>
@@ -50,8 +52,8 @@
 					class="carousel slide"
 					data-bs-ride="carousel"
 				>
-					<div class="carousel-inner">
-						<div class="carousel-item active bg-info border rounded p-5">
+					<div class="carousel-inner border-0">
+						<div class="carousel-item active panda-bg-info border rounded p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -61,7 +63,7 @@
 											just want to waste time in front of funky world.
 										</p>
 										<h1>$420</h1>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
@@ -73,7 +75,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item bg-info border rounded p-5">
+						<div class="carousel-item panda-bg-info border rounded p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -83,7 +85,7 @@
 											to waste time in front of tv.
 										</p>
 										<h1>$1200</h1>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
@@ -95,7 +97,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item bg-info border rounded p-5">
+						<div class="carousel-item panda-bg-info border rounded p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -105,7 +107,7 @@
 											want to waste time in front of fake sports.
 										</p>
 										<h1>$600</h1>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
@@ -144,7 +146,7 @@
 			<!-- catagories start  -->
 			<section>
 				<div class="container text-center my-5">
-					<div class="row g-2">
+					<div class="row g-4 categories">
 						<!-- single catagory -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div
@@ -152,7 +154,7 @@
 							>
 								<h1 class="text-white fw-bold">Watch</h1>
 								<img
-									class="img-fluid w-25"
+									class="img-fluid"
 									src="./images/categories/watch.png"
 									alt=""
 								/>
@@ -165,7 +167,7 @@
 							>
 								<h1 class="text-white fw-bold">Bag</h1>
 								<img
-									class="img-fluid w-25"
+									class="img-fluid"
 									src="./images/categories/bag.png"
 									alt=""
 								/>
@@ -178,7 +180,7 @@
 							>
 								<h1 class="text-white fw-bold">Shoes</h1>
 								<img
-									class="img-fluid w-25"
+									class="img-fluid"
 									src="./images/categories/shoes.png"
 									alt=""
 								/>
@@ -188,13 +190,18 @@
 				</div>
 			</section>
 			<!-- catagories end  -->
+
 			<!-- shoes catagory start -->
-			<section class="container my-5">
+			<section class="container my-5 " id="shoes">
 				<h2 class="fw-bold fs-1">Shoes</h2>
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/shoes/shoe-1.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Supply 350</h5>
 								<h2>$120</h2>
@@ -205,13 +212,17 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/shoes/shoe-2.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/shoes/shoe-2.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Nike 360</h5>
 								<h2>$320</h2>
@@ -221,13 +232,17 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/shoes/shoe-3.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/shoes/shoe-3.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Red Airmax</h5>
 								<h2>$350</h2>
@@ -238,7 +253,7 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
@@ -247,16 +262,20 @@
 			<!-- shoes catagory end -->
 
 			<!-- Backpack section start  -->
-			<section class="container my-5">
+			<section class="container my-5" id="backpack">
 				<h2 class="fw-bold fs-1">Backpack</h2>
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/bags/bag-1.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/bags/bag-1.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Red Laltu Bag</h5>
 								<h2>$120</h2>
-								
+
 								<p class="card-text">
 									This is a wider card with supporting text below as a natural
 									lead-in to additional content. This content is a little bit
@@ -264,13 +283,17 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/bags/bag-2.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/bags/bag-2.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Blue Niltu Bag</h5>
 								<h2>$320</h2>
@@ -280,13 +303,17 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card h-100 shadow-lg border-0">
-							<img src="./images/bags/bag-3.png" class="card-img-top" alt="..." />
+							<img
+								src="./images/bags/bag-3.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Black Kaltu Bag</h5>
 								<h2>$350</h2>
@@ -297,14 +324,37 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- Backpack section end  -->
+
+			<!-- subscribe start  -->
+			<section style="height:300px;" class="container d-flex justify-content-center panda-bg-info align-items-center rounded-4 my-5" id="subscribe">
+				<div>
+					<h2>LET'S STAY IN TOUCH</h2>
+				<p>Get updates on sales, specials and more</p>
+				<form>
+					<div class="mb-1">
+						<input
+							type="email"
+							class="form-control"
+							id="exampleInputEmail1"
+							aria-describedby="emailHelp"
+						/>
+					</div>
+					<button type="submit" class="btn panda-btn-buy-now">Submit</button>
+				</form>
+				</div>
+			</section>
+			<!-- subscribe End  -->
 		</main>
+		<footer>
+			<p class="text-center text-secondary"><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+		</footer>
 
 		<script src="./bootstrap/js/bootstrap.min.js"></script>
 	</body>
